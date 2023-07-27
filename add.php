@@ -32,7 +32,7 @@ $bootstrap = new bootstrap();
         $password = $_POST['password'];
         $email = $_POST['email'];
         $query->insert($username, $password, $email);
-        
+
       }
     }
     ?>
@@ -46,10 +46,13 @@ $bootstrap = new bootstrap();
           <form action="add.php" method="post">
             <label>Username</label>
             <input type="text" name="username" class="form-control" placeholder="Username">
+            <p class="text-danger"><?php if(!empty($usererror)){ echo $usererror; } ?></p>
             <label>Password</label>
             <input type="password" name="password" class="form-control" placeholder="Password">
+            <p class="text-danger"><?php if(!empty($passerror)){ echo $passerror; } ?></p>
             <label>Email</label>
             <input type="email" name="email" class="form-control" placeholder="Email">
+            <p class="text-danger"><?php if(!empty($emailerror)){ echo $emailerror; } ?></p>
             <br>
             <button type="submit" class="btn btn-success w-100">Submit</button>
           </form>

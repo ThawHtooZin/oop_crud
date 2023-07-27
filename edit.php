@@ -47,10 +47,13 @@ $bootstrap = new bootstrap();
           <form action="" method="post">
             <label>Username</label>
             <input type="text" name="username" class="form-control" placeholder="Username" value="<?php echo $data['username']; ?>">
+            <p class="text-danger"><?php if(!empty($usererror)){ echo $usererror; } ?></p>
             <label>Password</label>
             <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo $data['password']; ?>">
+            <p class="text-danger"><?php if(!empty($passerror)){ echo $passerror; } ?></p>
             <label>Email</label>
             <input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $data['email']; ?>">
+            <p class="text-danger"><?php if(!empty($emailerror)){ echo $emailerror; } ?></p>
             <br>
             <button type="submit" class="btn btn-success w-100">Submit</button>
           </form>
