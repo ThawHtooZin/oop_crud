@@ -40,7 +40,7 @@ $bootstrap = new bootstrap();
       <div class="card">
         <div class="card-header">
           <h2 class="d-inline">Add Data</h2>
-          <a href="add.php" class="btn btn-secondary float-end">Back</a>
+          <a href="index.php" class="btn btn-secondary float-end">Back</a>
         </div>
         <div class="card-body">
           <form action="add.php" method="post">

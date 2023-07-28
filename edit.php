@@ -40,8 +40,8 @@ $bootstrap = new bootstrap();
     <div class="container">
       <div class="card">
         <div class="card-header">
-          <h2 class="d-inline">Add Data</h2>
-          <a href="add.php" class="btn btn-secondary float-end">Back</a>
+          <h2 class="d-inline">Update Data</h2>
+          <a href="index.php" class="btn btn-secondary float-end">Back</a>
         </div>
         <div class="card-body">
           <form action="" method="post">
@@ -55,7 +55,7 @@ $bootstrap = new bootstrap();
             <input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $data['email']; ?>">
             <p class="text-danger"><?php if(!empty($emailerror)){ echo $emailerror; } ?></p>
             <br>
-            <button type="submit" class="btn btn-success w-100">Submit</button>
+            <button type="submit" class="btn btn-warning w-100">Submit</button>
           </form>
         </div>
       </div>
